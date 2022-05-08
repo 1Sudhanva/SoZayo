@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>Login Page</title>
+    <style>
+        body {
+          background-image: url(../img/background.gif);
+        }
+        .glassbg {
+          background: rgba(255, 255, 255, 0.5);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(4.5px);
+          -webkit-backdrop-filter: blur(4.5px);
+          border-radius: 10px; 
+          border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-xs-12 offset-md-3 glassbg m-3 p-3">
+            <h1 class="text-center">Admin Login</h1>
+            <form method="post">
+              <div class="form-group m-3">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+              </div>
+              <div class="form-group m-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block m-3">Login</button>
+          </div>
+      </div>
+  </body>
+</html>

@@ -18,6 +18,48 @@
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
       }
+      .batteryContainer {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 20px;
+        /* margin-left: 380px; */
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .batteryOuter {
+        border-radius: 25px;
+        border: 5px solid #444;
+        padding: 5px;
+        width: 250px;
+        height: 90px;
+      }
+
+      #batteryLevel {
+        border-radius: 25px;
+        background-color: #73ad21;
+        width: 200px;
+        height: 70px;
+      }
+
+      .batteryBump {
+        border-radius: 30px;
+        background-color: #444;
+        margin: 2px;
+        width: 10px;
+        height: 30px;
+      }
+      .glassbg {
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4.5px);
+        -webkit-backdrop-filter: blur(4.5px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
       .nav-link{
         font-weight:bolder;
         height: auto;
@@ -57,7 +99,7 @@
               <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item p-1">
-              <a class="nav-link" href="dev_mon.html">Device Monitoring</a>
+              <a class="nav-link active" href="dev_mon.html">Device Monitoring</a>
             </li>
             <li class="nav-item p-1">
               <a class="nav-link" aria-current="page" href="about.html"
@@ -68,7 +110,7 @@
               <a class="nav-link" href="contacts.html">Contacts</a>
             </li>
             <li class="nav-item p-1">
-              <a class="nav-link active" href="profile.html">Sign In</a>
+              <a class="nav-link" href="profile.html">Sign In</a>
             </li>
             <li class="nav-item p-1">
               <a class="nav-link" href="register.html">Sign Up</a>
@@ -80,20 +122,19 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-xs-12 offset-md-3 glassbg m-3 p-3">
-          <h1 class="text-center">Choose your Role</h1>
-          <form class="col-md-12 text-center button">
-            <button class="btn btn-primary">
-              <a class="text-light text-decoration-none" href="a_login.html"
-                >Admin</a
-              >
-            </button>
-            <button class="btn btn-secondary">
-              <a class="text-light text-decoration-none" href="c_login.html"
-                >Customer</a
-              >
-            </button>
-          </form>
+        <div class="col-md-12 col-xs-12 offset-md-3 glassbg m-3 p-4">
+          <h1 class="text-center p-4">Device Monitorning</h1>
+          <div class="col-6 p-4">
+            <div>
+              <h1>
+                <a
+                  class="text-decoration-none"
+                  href="https://sozoyoiotplatform.000webhostapp.com/"
+                  >Generated Data</a
+                >
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
